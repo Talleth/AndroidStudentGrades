@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/textViewAvgGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="Avg Grade"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewMaxGrade"
+        app:layout_constraintEnd_toEndOf="@+id/editGrade3" />
+
+    <EditText
+        android:id="@+id/editGrade2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editGrade1"
+        app:layout_constraintTop_toBottomOf="@+id/editGrade1" />
+
+    <TextView
+        android:id="@+id/textviewSubject1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="Subject"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editGrade1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewSubject3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:text="Subject"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editGrade3"
+        app:layout_constraintEnd_toStartOf="@+id/editGrade3" />
+
+    <EditText
+        android:id="@+id/editGrade1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textviewSubject1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewSubject2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:text="Subject"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editGrade2"
+        app:layout_constraintEnd_toStartOf="@+id/editGrade2" />
+
+    <EditText
+        android:id="@+id/editGrade3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editGrade2"
+        app:layout_constraintTop_toBottomOf="@+id/editGrade2" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="104dp"
+        android:text="@string/next"
+        app:layout_constraintStart_toEndOf="@+id/button_submit"
+        app:layout_constraintTop_toBottomOf="@+id/editGrade3" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:onClick="onSubmit"
+        android:text="Submit"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_first"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMaxGrade" />
+
+    <TextView
+        android:id="@+id/textViewMinGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="Min Grade"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewMaxGrade"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMaxGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="41dp"
+        android:text="Max Grade"
+        app:layout_constraintBottom_toTopOf="@+id/button_submit"
+        app:layout_constraintStart_toEndOf="@+id/textViewMinGrade" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
